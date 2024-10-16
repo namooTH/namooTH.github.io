@@ -1,0 +1,109 @@
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Zen+Maru+Gothic&display=swap" rel="stylesheet">
+  <link href="./output.css" rel="stylesheet">
+</head>
+<script>
+  window.onload = function() {
+    getTime()
+  };
+  setInterval(getTime,1000);
+
+  function getTime() {
+    console.log(Date.now())
+    var age = document.getElementById("age")  
+    age.innerHTML = `${((Date.now() - 1284656400000) / 1000 / 60 / 60 / 24 / 365.25)}`
+  }
+</script>
+<div class="grid grid-cols-2 place-items-center p-6 h-full bg-cover bg-no-repeat" style="background-image: url('osucontest.png');">
+  <div class="overflow-y-scroll no-scrollbar max-h-full w-full text-white font-zenmaru flex flex-col p-24 bg-gradient-to-r from-red-500 to-transparent opacity-90 rounded-3xl">
+  
+    <h1 class="text-9xl">Hello</h1>
+    <h2 class="text-8xl">hi i am namu!</h2>
+
+    <div>
+
+      <div class="pt-10">
+        <div class="w-full pl-2 py-2 text-2xl bg-gradient-to-r from-black/80 to-transparent">
+          <h1 class="text-4xl underline">Introduction</h1>
+          <p>the name's namu you may also know me as namo</p>
+          <p>i am a <a id="age"></a> years old guy living in thailand 🇹🇭</p>
+          <p>i am currently studying in <a href="https://www.tsn.ac.th/web/" class="text-green-500">Debsirin </a><a href="https://www.tsn.ac.th/web/" class="text-yellow-500">Nonthaburi</a> School</p>
+        </div>
+      </div>
+  
+      <div class="pt-6">
+        <div class="w-full pl-2 py-2 text-2xl bg-gradient-to-r from-black/80 to-transparent">
+          <h1 class="text-4xl underline">Skills</h1>
+          <p>i can code in c#, python 3, gdscript, rust, javascript (sort of)</p>
+          <p>i like designing uis</p>
+          <p>i have been using godot engine for around 1 year(s)</p>
+        </div>
+      </div>
+
+      <div class="pt-6">
+        <div class="w-full pl-2 py-2 text-2xl bg-gradient-to-r from-black/80 to-transparent">
+          <h1 class="text-4xl underline">Things i am obsessed with</h1>
+          <p>- トニトニカクワカイイ (Tonikawa) my favorite romcom of all time</p>
+          <p>- vocaloid music</p>
+          <p>- osu</p>
+        </div>
+      </div>
+
+    </div>
+
+
+  </div>
+  
+  <div class="h-5/6 w-11/12 rounded-3xl bg-slate-950 border-4 bg-opacity-90 border-red-200 overflow-y-scroll no-scrollbar">
+    
+    <div class="min-w-full min-h-fit">
+      <h1 class="text-white text-3xl text-center bg-gradient-to-b from-red-500 to-transparent p-4 rounded-t-xl font-zenmaru font-black">Contacts</h1>
+    </div>
+    
+    <div class="grid grid-cols-2 place-items-start pl-6 pr-6">
+
+      <div class="bg-[#111214] h-fit w-11/12 rounded-xl">
+        
+        <div class="flex flex-row p-2 items-center">
+          <img src="discord.svg" class="size-6 align-middle"></img>
+          <h1 class="text-white text-lg font-zenmaru font-black pl-2">Discord</h1>
+        </div>
+        
+        <div class="bg-[#a8b3cc] w-full h-16 rounded-t-xl p-4">
+          <img src="Rowbot.webp" class="bg-[#111214] rounded-full p-2"></img>
+        </div>
+
+        <div class="pl-4 pb-4 text-white">
+          <h1 class="text-2xl font-zenmaru font-black pt-16">Namaru</h1>
+          <h2 class="text-xl font-zenmaru font-thin ">nqmou • he/him</h2>
+          <code class="bg-stone-600">【=◈︿◈=】</code>
+        </div>
+
+      </div>
+
+      
+      <div class="bg-[#111214] h-fit w-full rounded-xl">
+        
+        <div class="flex flex-row p-2 items-center">
+          <img src="github-mark-white.svg" class="size-6 align-middle"></img>
+          <h1 class="text-white text-lg font-zenmaru font-black pl-2">Github</h1>
+        </div>
+        
+        <div class="flex flex-row justify-center center items-center">
+          <img src="https://avatars.githubusercontent.com/u/73419369" class="bg-[#111214] rounded-full size-32 border-stone-500 border-2"></img>
+        </div>
+        
+        <div class="pl-4 pb-4 text-white">
+          <h1 class="text-2xl font-zenmaru font-black">Namu</h1>
+          <h2 class="text-stone-500 text-xl font-zenmaru font-extralight ">namooTH •  he/him</h2>
+        </div>
+
+      </div>
+
+    </div>
+  </div>
+</div>
