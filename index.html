@@ -1,4 +1,4 @@
-<title>Website Name</title>
+<title>Namu Site</title>
 <meta content="Namu Site" property="og:title" />
 <meta content="about a guy called namu" property="og:description" />
 <meta content="#DE3163" data-react-helmet="true" name="theme-color" />
@@ -10,6 +10,7 @@
   <link href="https://fonts.googleapis.com/css2?family=Zen+Maru+Gothic&display=swap" rel="stylesheet">
   <link href="./output.css" rel="stylesheet">
 </head>
+
 <script>
   window.onload = function() {
     getTime()
@@ -22,6 +23,7 @@
     age.innerHTML = `${((Date.now() - 1284656400000) / 1000 / 60 / 60 / 24 / 365.25)}`
   }
 </script>
+
 <div class="grid grid-cols-2 place-items-center p-6 h-full bg-cover bg-no-repeat" style="background-image: url('osucontest.png');">
   <div class="overflow-y-scroll no-scrollbar max-h-full w-full text-white font-zenmaru flex flex-col p-24 bg-gradient-to-r from-red-500 to-transparent opacity-90 rounded-3xl">
   
@@ -69,43 +71,67 @@
     </div>
     
     <div class="grid grid-cols-2 place-items-start pl-6 pr-6">
+      <div class="h-fit w-11/12">
 
-      <div class="bg-[#111214] h-fit w-11/12 rounded-xl">
+        <div class="bg-[#111214] rounded-xl">
         
-        <div class="flex flex-row p-2 items-center">
-          <img src="discord.svg" class="size-6 align-middle"></img>
-          <h1 class="text-white text-lg font-zenmaru font-black pl-2">Discord</h1>
+          <div class="flex flex-row p-2 items-center">
+            <img src="discord.svg" class="size-6 align-middle"></img>
+            <h1 class="text-white text-lg font-zenmaru font-black pl-2">Discord</h1>
+          </div>
+          
+          <div class="bg-[#a8b3cc] w-full h-16 rounded-t-xl p-4">
+            <img src="Rowbot.webp" class="bg-[#111214] rounded-full p-2"></img>
+          </div>
+  
+          <div class="pl-4 pb-4 text-white">
+            <h1 class="text-2xl font-zenmaru font-black pt-16">Namaru</h1>
+            <h2 class="text-xl font-zenmaru font-thin ">nqmou • he/him</h2>
+          </div>
+  
         </div>
-        
-        <div class="bg-[#a8b3cc] w-full h-16 rounded-t-xl p-4">
-          <img src="Rowbot.webp" class="bg-[#111214] rounded-full p-2"></img>
-        </div>
-
-        <div class="pl-4 pb-4 text-white">
-          <h1 class="text-2xl font-zenmaru font-black pt-16">Namaru</h1>
-          <h2 class="text-xl font-zenmaru font-thin ">nqmou • he/him</h2>
-          <code class="bg-stone-600">【=◈︿◈=】</code>
-        </div>
-
       </div>
 
-      
-      <div class="bg-[#111214] h-fit w-full rounded-xl">
-        
-        <div class="flex flex-row p-2 items-center">
-          <img src="github-mark-white.svg" class="size-6 align-middle"></img>
-          <h1 class="text-white text-lg font-zenmaru font-black pl-2">Github</h1>
-        </div>
-        
-        <div class="flex flex-row justify-center center items-center">
-          <img src="https://avatars.githubusercontent.com/u/73419369" class="bg-[#111214] rounded-full size-32 border-stone-500 border-2"></img>
-        </div>
-        
-        <div class="pl-4 pb-4 text-white">
-          <h1 class="text-2xl font-zenmaru font-black">Namu</h1>
-          <h2 class="text-stone-500 text-xl font-zenmaru font-extralight ">namooTH •  he/him</h2>
-        </div>
 
+      <div class="h-fit w-11/12">
+        <div class="bg-[#111214] rounded-xl">
+        
+          <div class="flex flex-row p-2 items-center">
+            <img src="github-mark-white.svg" class="size-6 align-middle"></img>
+            <h1 class="text-white text-lg font-zenmaru font-black pl-2">Github</h1>
+          </div>
+          
+          <div class="flex flex-row justify-center center items-center">
+            <img src="https://avatars.githubusercontent.com/u/73419369" class="bg-[#111214] rounded-full size-32 border-stone-500 border-2"></img>
+          </div>
+          
+          <div class="pl-4 pb-4 text-white">
+            <h1 class="text-2xl font-zenmaru font-black">Namu</h1>
+            <h2 class="text-stone-500 text-xl font-zenmaru font-extralight ">namooTH •  he/him</h2>
+          </div>
+  
+        </div>
+      </div>
+
+
+      <div class="pt-4 h-fit w-11/12">
+        <div class="bg-[#111214] rounded-xl">
+
+          <div class="flex flex-row p-2 items-center">
+            <img src="x.svg" class="size-6 align-middle"></img>
+            <h1 class="text-white text-lg font-zenmaru font-black pl-2">X (Twitter)</h1>
+          </div>
+          
+          <div class="bg-cover bg-no-repeat w-full h-16 rounded-t-xl p-4" style="background-image: url('https://pbs.twimg.com/profile_banners/1658746001300271105/1698305300/1500x500');">
+            <img src="https://pbs.twimg.com/profile_images/1658746079108825088/Ldscuz3k_400x400.png" class="bg-[#111214] rounded-full p-1 size-24"></img>
+          </div>
+
+          <div class="pt-14 pl-2 pb-4 text-white">
+            <h1 class="text-2xl font-zenmaru font-black">Namu</h1>
+            <h2 class="text-stone-500 text-xl font-zenmaru font-extralight">@HydraNamu</h2>
+          </div>
+        
+        </div>
       </div>
 
     </div>
