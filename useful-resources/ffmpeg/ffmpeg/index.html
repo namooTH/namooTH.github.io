@@ -367,15 +367,6 @@
   
 </li>
       
-        <li class="md-nav__item">
-  <a href="#yt-dlp-youtube_dl" class="md-nav__link">
-    <span class="md-ellipsis">
-      yt-dlp / youtube_dl
-    </span>
-  </a>
-  
-</li>
-      
     </ul>
   
 </nav>
@@ -448,15 +439,6 @@
   
 </li>
       
-        <li class="md-nav__item">
-  <a href="#yt-dlp-youtube_dl" class="md-nav__link">
-    <span class="md-ellipsis">
-      yt-dlp / youtube_dl
-    </span>
-  </a>
-  
-</li>
-      
     </ul>
   
 </nav>
@@ -487,18 +469,6 @@
 <p>(without custom bg audio)</p>
 <pre><code>ffmpeg -i input.mp4 -vf &quot;scale=iw:ih:neighbor, fps=60&quot; -b:a 5000 -b:v 500k -bufsize 100k -preset ultrafast output.mp4
 </code></pre>
-<h3 id="yt-dlp-youtube_dl">yt-dlp / youtube_dl</h3>
-<p>if you are using youtube_dl instead of yt-dlp just replace the "yt-dlp" at the beginning to youtube_dl ( some things might not work as expect )</p>
-<ul>
-<li>
-<p>download mp3
-<code>yt-dlp -f ba -x --audio-format mp3 &lt;video link&gt;</code></p>
-</li>
-<li>
-<p>download video 720p with audio
-<code>yt-dlp -f 247+251 --merge-output-format mp4 &lt;video link&gt;</code></p>
-</li>
-</ul>
 
 
 
