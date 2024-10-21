@@ -1,6 +1,10 @@
 name: mkdocs
 
-on: [push]
+on:
+  workflow_run:
+    workflows: ["tailwindcss-update"]
+    types:
+      - completed
 
 permissions:
   contents: write
