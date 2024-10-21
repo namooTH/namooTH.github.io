@@ -1,4 +1,4 @@
-name: tailwindcss-update
+name: setup
 
 on: [push]
 
@@ -9,6 +9,13 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v4
 
+      - name: update mkdocs
+        uses: actions/setup-python@v5
+        with:
+          python-version: 3.x      
+      - run: pip install mkdocs-material
+      - run: mkdocs build --site-dir ./useful-resources
+
       - name: update tailwindcss
         uses: ZoeyVid/tailwindcss-update@main
         with:
@@ -18,6 +25,7 @@ jobs:
           
       - name: push changes
         run: |
+          git add --force useful-resources/\*
           git add --force output.css
           git config user.name "GitHub"
           git config user.email "noreply@github.com"
