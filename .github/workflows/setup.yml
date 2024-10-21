@@ -3,7 +3,7 @@ name: setup
 on:
   push:
     branches:
-      - master
+      - main
 
 jobs:          
   setup:
