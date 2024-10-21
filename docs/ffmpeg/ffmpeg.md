@@ -14,15 +14,3 @@ ffmpeg -i input.mp4 -i bgsong.mp3 -map 0:v -map 1:a -shortest -vf "scale=iw:ih:n
 ```
 ffmpeg -i input.mp4 -vf "scale=iw:ih:neighbor, fps=60" -b:a 5000 -b:v 500k -bufsize 100k -preset ultrafast output.mp4
 ```
-
-
-
-### yt-dlp / youtube_dl
-
-if you are using youtube_dl instead of yt-dlp just replace the "yt-dlp" at the beginning to youtube_dl ( some things might not work as expect )
-
-- download mp3
-```yt-dlp -f ba -x --audio-format mp3 <video link>```
-
-- download video 720p with audio
-```yt-dlp -f 247+251 --merge-output-format mp4 <video link>```
