@@ -3,7 +3,7 @@ name: setup
 on: [push]
 
 jobs:          
-  tailwindcss-update:
+  setup:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
@@ -29,5 +29,5 @@ jobs:
           git add --force output.css
           git config user.name "GitHub"
           git config user.email "noreply@github.com"
-          git diff-index --quiet HEAD || git commit -sm "tailwindcss-update"
+          git diff-index --quiet HEAD || git commit -sm "setup"
           git push
