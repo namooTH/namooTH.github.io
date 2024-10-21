@@ -1,6 +1,9 @@
 name: setup
 
-on: [push]
+on:
+  push:
+    branches:
+      - master
 
 jobs:          
   setup:
