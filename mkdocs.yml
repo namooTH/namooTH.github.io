@@ -1,0 +1,4 @@
+site_name: Namu's Useful Resources
+site_url: https://mydomain.org/useful-resources
+theme:
+  name: material
