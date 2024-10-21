@@ -1,6 +1,10 @@
 name: tailwindcss-update
 
-on: [push]
+on:
+  workflow_run:
+    workflows: ["mkdocs"]
+    types:
+      - completed
 
 jobs:          
   tailwindcss-update:

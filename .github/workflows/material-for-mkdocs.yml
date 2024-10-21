@@ -1,7 +1,10 @@
-name: ci 
+name: mkdocs
+
 on: [push]
+
 permissions:
   contents: write
+
 jobs:
   deploy:
     runs-on: ubuntu-latest
