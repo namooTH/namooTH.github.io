@@ -18,4 +18,12 @@ jobs:
         with:
           python-version: 3.x
       - run: pip install mkdocs-material
-      - run: mkdocs gh-deploy --force --clean --config-file ./mkdocs.yml --site-dir ./useful-resources
+      - run: mkdocs build --site-dir ./useful-resources
+      
+      - name: push changes
+        run: |
+          git add --force useful-resources/\*
+          git config user.name "GitHub"
+          git config user.email "noreply@github.com"
+          git diff-index --quiet HEAD || git commit -sm "Update Mkdocs"
+          git push
